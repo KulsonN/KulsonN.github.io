@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy – AutoClipper</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="wrap">
+<header><div class="logo">▶</div><b><a href="index.html" style="color:inherit;text-decoration:none">AutoClipper</a></b>
+<nav><a href="index.html">Home</a><a href="terms.html">Terms of Service</a></nav></header>
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: November 20, 2026</p>
+
+<p>This Privacy Policy explains how AutoClipper ("the app") accesses, uses, stores and protects data, including data obtained through YouTube API Services and Google APIs. AutoClipper is a personal desktop application used by a single person, the owner of the YouTube channel @okragle_shoty ("the owner").</p>
+
+<h2>1. YouTube API Services</h2>
+<p>AutoClipper uses YouTube API Services. By using AutoClipper you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's privacy practices are described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>2. What data the app accesses</h2>
+<ul>
+<li><b>Google OAuth tokens</b> (access token and refresh token) for the owner's Google account, with the scopes <code>https://www.googleapis.com/auth/youtube.upload</code> and <code>https://www.googleapis.com/auth/youtube.readonly</code>.</li>
+<li><b>Basic channel information</b> of the owner's channel: channel ID, title, handle, avatar URL and subscriber count (via <code>channels.list</code> with <code>mine=true</code>).</li>
+<li><b>Information about videos the app uploads</b>: the video ID returned by YouTube after an upload.</li>
+</ul>
+<p>The app does not access, collect or store data of any other YouTube users, and it does not access the owner's watch history, comments, subscriptions, contacts or any other personal data.</p>
+
+<h2>3. How the data is used</h2>
+<ul>
+<li>OAuth tokens are used only to upload short videos chosen by the owner to the owner's own YouTube channel (<code>videos.insert</code>) and to read the basic channel information listed above.</li>
+<li>Channel information is used only to display which channel is connected inside the app.</li>
+<li>Video IDs are used only to show the owner a link to each uploaded video.</li>
+</ul>
+<p>Data is never used for advertising, profiling, analytics, or training of machine-learning models, and it is never sold.</p>
+
+<h2>4. Storage and security</h2>
+<ul>
+<li>All data is stored only locally on the owner's own computer (files <code>youtube_token.json</code> and <code>youtube_klient.json</code> in the app folder). AutoClipper does not operate any servers and does not transmit Google user data to any third party.</li>
+<li>Data is sent only directly to Google/YouTube servers over HTTPS, as required to perform uploads.</li>
+<li>Uploaded video IDs and channel information are kept only while the owner uses the app and are refreshed from YouTube when needed; nothing is kept longer than 30 days without being refreshed or deleted.</li>
+</ul>
+
+<h2>5. Sharing</h2>
+<p>AutoClipper does not share, sell, rent or disclose Google user data to anyone. The optional private Telegram bot used by the owner to approve shorts receives only the owner's own short videos and their titles; it never receives Google account data or tokens.</p>
+
+<h2>6. Deleting data and revoking access</h2>
+<ul>
+<li>The owner can disconnect the channel at any time with the "Rozłącz" (Disconnect) button in the app. This revokes the token at Google and deletes the locally stored token file.</li>
+<li>Access can also be revoked at any time on the Google security settings page: <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li>
+<li>Deleting the app folder removes all locally stored data.</li>
+</ul>
+
+<h2>7. Cookies</h2>
+<p>AutoClipper does not use cookies or similar technologies, and this website does not use cookies or tracking.</p>
+
+<h2>8. Changes</h2>
+<p>Any change to this policy will be published on this page with an updated date.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this Privacy Policy: <a href="mailto:szczyrkk@gmail.com">szczyrkk@gmail.com</a></p>
+
+<footer><a href="index.html">Home</a><a href="terms.html">Terms of Service</a></footer>
+</div></body></html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoClipper – stream clips to YouTube Shorts</title>
+<meta name="description" content="AutoClipper is a personal desktop tool that turns highlights from Twitch and Kick livestreams into YouTube Shorts and uploads them to the owner's own YouTube channel.">
+<!-- GOOGLE_SITE_VERIFICATION -->
+<link rel="stylesheet" href="style.css"></head>
+<body><div class="wrap">
+<header><div class="logo">▶</div><b>AutoClipper</b>
+<nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav></header>
+
+<h1>Livestream highlights → YouTube Shorts</h1>
+<p class="lead">AutoClipper is a personal desktop application that watches selected Twitch and Kick livestreams, detects the most interesting moments, turns them into vertical short videos with subtitles, and uploads them to its owner's own YouTube channel on a schedule.</p>
+
+<div class="card">
+<b>Who uses it:</b> AutoClipper is a private tool used by a single person – the owner of the YouTube channel
+<a href="https://www.youtube.com/@okragle_shoty">@okragle_shoty</a>. It is not offered to the public, it has no user accounts and it is not sold.
+</div>
+
+<h2>What the app does</h2>
+<ul>
+<li><b>Detects highlights</b> – monitors chat activity of selected livestreams and records short clips of moments when the chat reacts strongly.</li>
+<li><b>Edits shorts</b> – converts each clip to a 9:16 vertical video, adds automatic subtitles and a short caption ("hook").</li>
+<li><b>Lets the owner decide</b> – every short gets a quality score; the owner reviews and approves shorts in the app or through a private Telegram bot before publishing.</li>
+<li><b>Schedules publishing</b> – approved shorts are placed into a daily publishing schedule.</li>
+<li><b>Uploads to YouTube</b> – using the YouTube Data API (videos.insert), the app uploads the approved shorts to the owner's own channel, setting the title, description and scheduled publish time.</li>
+</ul>
+
+<h2>How it uses YouTube and Google data</h2>
+<ul>
+<li>The owner signs in once with Google (OAuth 2.0) and grants the scopes <code>youtube.upload</code> and <code>youtube.readonly</code>.</li>
+<li><code>youtube.upload</code> is used only to upload the owner's shorts to the owner's channel. <code>youtube.readonly</code> is used only to show the connected channel's name, avatar and subscriber count inside the app.</li>
+<li>Tokens are stored only on the owner's own computer. No data is sent to any server operated by AutoClipper – there is none.</li>
+<li>The app does not read, collect or share data of any other YouTube users.</li>
+</ul>
+<p>Full details: <a href="privacy.html"><b>Privacy Policy</b></a> · <a href="terms.html">Terms of Service</a></p>
+
+<h2>Contact</h2>
+<p>Questions about the app or its data practices: <a href="mailto:szczyrkk@gmail.com">szczyrkk@gmail.com</a></p>
+
+<footer><span>© 2026 AutoClipper</span><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></footer>
+</div></body></html>
